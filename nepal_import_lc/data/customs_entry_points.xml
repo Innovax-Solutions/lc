@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="cep_birgunj" model="nepal.customs.entry.point">
+        <field name="name">Birgunj</field>
+        <field name="code">BRG</field>
+        <field name="border_type">india</field>
+    </record>
+    <record id="cep_biratnagar" model="nepal.customs.entry.point">
+        <field name="name">Biratnagar</field>
+        <field name="code">BTR</field>
+        <field name="border_type">india</field>
+    </record>
+    <record id="cep_bhairahawa" model="nepal.customs.entry.point">
+        <field name="name">Bhairahawa</field>
+        <field name="code">BHR</field>
+        <field name="border_type">india</field>
+    </record>
+    <record id="cep_kakarbhitta" model="nepal.customs.entry.point">
+        <field name="name">Kakarbhitta</field>
+        <field name="code">KKB</field>
+        <field name="border_type">india</field>
+    </record>
+    <record id="cep_nepalgunj" model="nepal.customs.entry.point">
+        <field name="name">Nepalgunj</field>
+        <field name="code">NPG</field>
+        <field name="border_type">india</field>
+    </record>
+    <record id="cep_rasuwagadhi" model="nepal.customs.entry.point">
+        <field name="name">Kodari / Rasuwagadhi</field>
+        <field name="code">RSW</field>
+        <field name="border_type">china</field>
+    </record>
+    <record id="cep_tatopani" model="nepal.customs.entry.point">
+        <field name="name">Tatopani</field>
+        <field name="code">TTP</field>
+        <field name="border_type">china</field>
+    </record>
+    <record id="cep_tia" model="nepal.customs.entry.point">
+        <field name="name">Tribhuvan International Airport</field>
+        <field name="code">TIA</field>
+        <field name="border_type">air</field>
+    </record>
+    <record id="cep_krishnanagar" model="nepal.customs.entry.point">
+        <field name="name">Krishnanagar</field>
+        <field name="code">KRN</field>
+        <field name="border_type">india</field>
+    </record>
+    <record id="cep_mahendranagar" model="nepal.customs.entry.point">
+        <field name="name">Mahendranagar</field>
+        <field name="code">MHN</field>
+        <field name="border_type">india</field>
+    </record>
+</odoo>

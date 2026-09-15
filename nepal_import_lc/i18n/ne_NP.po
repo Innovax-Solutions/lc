@@ -1,0 +1,1582 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* nepal_import_lc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-29 10:13+0000\n"
+"PO-Revision-Date: 2026-06-29 10:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: Nepali\n"
+"Language: ne_NP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid ""
+"%\n"
+"                                <span class=\"oe_inline\">= </span>"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid ""
+"%)\n"
+"                        for this HS code."
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_margin_rule.py:0
+msgid "'Effective To' cannot be before 'Effective From'."
+msgstr "'लागू अन्त्य मिति' 'लागू सुरु मिति' भन्दा अघिको हुन सक्दैन।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_res_company__exim_code
+msgid ""
+"13-character Export-Import code issued by the Department of Customs via the "
+"Nepal National Single Window. The first 9 digits are the firm's PAN, the "
+"next 2 the ownership type, the last 2 a unique serial. Required on every "
+"Pragyapan Patra and LC."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__hs_code
+msgid ""
+"8-digit tariff code of the principal goods. Drives the NRB mandated-margin "
+"check."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__acceptance
+msgid "Acceptance Commission"
+msgstr "स्वीकृति कमिसन"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__active
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__active
+msgid "Active"
+msgstr "सक्रिय"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/purchase_order.py:0
+msgid ""
+"Advance payment (TT) is limited to INR %(limit)s per transaction. This order"
+" (%(amount)s %(cur)s) must be opened under an LC."
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/purchase_order.py:0
+msgid ""
+"Advance payment (TT) is limited to USD %(limit)s per transaction. This order"
+" (%(amount)s %(cur)s) must be opened under an LC."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__advising_bank_name
+msgid "Advising / Negotiating Bank"
+msgstr "सूचक / वार्ताकार बैंक"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_customs_entry_point__border_type__air
+msgid "Air (TIA)"
+msgstr "हवाई (TIA)"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Amendment"
+msgstr "संशोधन"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__charge_amount
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__charge_amount
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__amendment
+msgid "Amendment Charge"
+msgstr "संशोधन शुल्क"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__notes
+msgid "Amendment Details"
+msgstr "संशोधन विवरण"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__amendment_no
+msgid "Amendment No."
+msgstr "संशोधन नं."
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__amendment_ids
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Amendments"
+msgstr "संशोधनहरू"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Amendments are part of the LC audit trail and cannot be deleted."
+msgstr "संशोधनहरू प्रतीतपत्रको लेखापरीक्षण अभिलेखको भाग हुन् र मेट्न मिल्दैन।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid ""
+"Amendments can only be added to a live (issued / shipped / documents) LC."
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid ""
+"Amendments can only be made on a live LC (issued / shipped / documents)."
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Amendments cannot be edited once saved."
+msgstr "संशोधन एक पटक सुरक्षित गरेपछि सम्पादन गर्न मिल्दैन।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__amount
+msgid "Amount"
+msgstr "रकम"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/purchase_order.py:0
+msgid ""
+"An LC reference is required when the import transaction type is Letter of "
+"Credit."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.constraint,message:nepal_import_lc.constraint_nepal_lc_master_name_unique
+msgid "An LC with this number already exists."
+msgstr "यो नम्बरको प्रतीतपत्र पहिले नै अवस्थित छ।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "An amendment must be linked to an LC."
+msgstr "संशोधन कुनै प्रतीतपत्रसँग जोडिएको हुनुपर्छ।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__date_application
+msgid "Application Date"
+msgstr "आवेदन मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__applied
+msgid "Applied"
+msgstr "आवेदन गरिएको"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+msgid "Apply Amendment"
+msgstr "संशोधन लागू गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_margin_rule_search
+msgid "Archived"
+msgstr "अभिलेखित"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Auto / LC Number"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__bci
+msgid "BCI / Inspection Report"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__bci_ref
+msgid "BCI Report Ref."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__bci_required
+msgid "BCI Report Required"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__charge_ids
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Bank Charges"
+msgstr "बैंक शुल्क"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Banks"
+msgstr "बैंकहरू"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__margin_shortfall
+msgid "Below NRB Margin"
+msgstr "ने.रा.बैंक मार्जिन भन्दा कम"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Beneficiary"
+msgstr "हिताधिकारी"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__partner_id
+msgid "Beneficiary (Supplier)"
+msgstr "हिताधिकारी (आपूर्तिकर्ता)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__beneficiary_bank_swift
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_partner__beneficiary_bank_swift
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_users__beneficiary_bank_swift
+msgid "Beneficiary Bank SWIFT/BIC"
+msgstr "हिताधिकारी बैंक SWIFT/BIC"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__beneficiary_country_id
+msgid "Beneficiary Country"
+msgstr "हिताधिकारी देश"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__bibini_form_type
+msgid "Bi.Bi.Ni Form"
+msgstr "बि.बि.नि. फाराम"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__bibini
+msgid "Bi.Bi.Ni Form (NRB)"
+msgstr "बि.बि.नि. फाराम (ने.रा.बैंक)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__bibini_form_type__form3ga
+msgid "Bi.Bi.Ni Form No. 3 \"Ga\" (INR / India)"
+msgstr "बि.बि.नि. फाराम नं. ३ \"ग\" (भा.रु. / भारत)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__bibini_form_type__form3
+msgid "Bi.Bi.Ni Form No. 3 (FCY)"
+msgstr "बि.बि.नि. फाराम नं. ३ (विदेशी मुद्रा)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__transport
+msgid "Bill of Lading / Airway Bill"
+msgstr "लदान बिल / हवाई बिल"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__border_type
+msgid "Border"
+msgstr "सिमाना"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Cancel"
+msgstr "रद्द गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__cancellation
+msgid "Cancellation Charge"
+msgstr "रद्दीकरण शुल्क"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__cancelled
+msgid "Cancelled"
+msgstr "रद्द गरिएको"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid ""
+"Cannot issue LC %(lc)s: cash margin %(rate).1f%% is below the NRB-mandated "
+"minimum of %(req).1f%% for HS code %(hs)s. Increase the margin or attach the"
+" relevant exemption."
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid ""
+"Cannot issue LC %s - the following are required:\n"
+"- %s"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__margin_rate
+msgid "Cash Margin (%)"
+msgstr "नगद मार्जिन (%)"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid ""
+"Cash margin is below the NRB-mandated minimum\n"
+"                        ("
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Cash margin must be between 0% and 100%."
+msgstr "नगद मार्जिन ०% र १००% बीच हुनुपर्छ।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__coo
+msgid "Certificate of Origin (COO)"
+msgstr "उत्पत्ति प्रमाणपत्र (COO)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__lc_copy
+msgid "Certified LC Copy"
+msgstr "प्रमाणित प्रतीतपत्र प्रति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__charge_type
+msgid "Charge Type"
+msgstr "शुल्क प्रकार"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_customs_entry_point__border_type__china
+msgid "China Border"
+msgstr "चीन सिमाना"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Close LC"
+msgstr "प्रतीतपत्र बन्द गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__closed
+msgid "Closed"
+msgstr "बन्द"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__code
+msgid "Code"
+msgstr "कोड"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Commercial"
+msgstr "व्यापारिक"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__commercial_invoice
+msgid "Commercial Invoice"
+msgstr "व्यापारिक बीजक"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__commitment
+msgid "Commitment Commission"
+msgstr "प्रतिबद्धता कमिसन"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__company_currency_id
+msgid "Company Currency"
+msgstr "कम्पनी मुद्रा"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_res_partner
+msgid "Contact"
+msgstr "सम्पर्क"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__origin_country_id
+msgid "Country of Origin"
+msgstr "उत्पत्ति देश"
+
+#. module: nepal_import_lc
+#: model:ir.actions.act_window,name:nepal_import_lc.action_lc_amendment_wizard
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+msgid "Create Amendment"
+msgstr "संशोधन सिर्जना गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__create_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__create_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__create_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__create_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__create_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__create_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__create_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__create_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__create_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__create_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__create_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__create_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__currency_id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__currency_id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__currency_id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__currency_id
+msgid "Currency"
+msgstr "मुद्रा"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__current_expiry
+msgid "Current Expiry Date"
+msgstr "हालको समाप्ति मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__current_value
+msgid "Current LC Value"
+msgstr "हालको प्रतीतपत्र मूल्य"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__current_latest_shipment
+msgid "Current Latest Shipment"
+msgstr "हालको अन्तिम ढुवानी"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__current_tenor
+msgid "Current Tenor (days)"
+msgstr "हालको अवधि (दिन)"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+msgid "Current Values"
+msgstr "हालका मानहरू"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Customs & Compliance"
+msgstr "भन्सार र अनुपालन"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__cleared
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Customs Cleared"
+msgstr "भन्सार छुटकारा"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__customs_entry_point_id
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_customs_entry_point_form
+msgid "Customs Entry Point"
+msgstr "भन्सार प्रवेश बिन्दु"
+
+#. module: nepal_import_lc
+#: model:ir.actions.act_window,name:nepal_import_lc.action_nepal_customs_entry_point
+#: model:ir.ui.menu,name:nepal_import_lc.menu_nepal_customs_entry_point
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_customs_entry_point_list
+msgid "Customs Entry Points"
+msgstr "भन्सार प्रवेश बिन्दुहरू"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__ctd
+msgid "Customs Transit Declaration (CTD)"
+msgstr "भन्सार पारवहन घोषणा (CTD)"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "DAP / DAA"
+msgstr "DAP / DAA"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__payment_mode__dap_daa
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__purchase_order__import_transaction_type__dap_daa
+msgid "DAP / DAA (Collection)"
+msgstr "DAP / DAA (असुली)"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/purchase_order.py:0
+msgid ""
+"DAP/DAA (collection) imports are limited to USD %(limit)s equivalent. This "
+"order (%(amount)s %(cur)s) exceeds the limit."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__date
+msgid "Date"
+msgstr "मिति"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Dates & Tenor"
+msgstr "मिति र अवधि"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__date_payment_due
+msgid "Deferred Payment Due Date"
+msgstr "स्थगित भुक्तानी मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__deferred
+msgid "Deferred-Payment Commission"
+msgstr "स्थगित-भुक्तानी कमिसन"
+
+#. module: nepal_import_lc
+#: model_terms:ir.actions.act_window,help:nepal_import_lc.action_nepal_lc_margin_rule
+msgid "Define an NRB cash-margin rule"
+msgstr "ने.रा.बैंक नगद मार्जिन नियम परिभाषित गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__name
+msgid "Description"
+msgstr "विवरण"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__discrepancy
+msgid "Discrepancy Charge"
+msgstr "विसंगति शुल्क"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_account_move__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_company__display_name
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_partner__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__doc_type
+msgid "Document"
+msgstr "कागजात"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__document_ids
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Documents"
+msgstr "कागजातहरू"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__documents
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Documents Presented"
+msgstr "कागजात पेश गरिएको"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__documents_released
+msgid "Documents Released to Importer"
+msgstr "आयातकर्तालाई कागजात हस्तान्तरण"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__draft
+msgid "Draft"
+msgstr "मस्यौदा"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Draft / Applied"
+msgstr "मस्यौदा / आवेदन"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__exim_code
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_company__exim_code
+msgid "EXIM Code"
+msgstr "EXIM कोड"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__date_from
+msgid "Effective From"
+msgstr "लागू सुरु मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__date_to
+msgid "Effective To"
+msgstr "लागू अन्त्य मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__name
+msgid "Entry Point"
+msgstr "प्रवेश बिन्दु"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Exchange rate cannot be negative."
+msgstr "विनिमय दर ऋणात्मक हुन सक्दैन।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__expired
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Expired"
+msgstr "म्याद सकिएको"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__date_expiry
+msgid "Expiry Date"
+msgstr "समाप्ति मिति"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Expiry date cannot be before the application date."
+msgstr "समाप्ति मिति आवेदन मिति भन्दा अघिको हुन सक्दैन।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Expiry date cannot be before the issuance date."
+msgstr "समाप्ति मिति जारी मिति भन्दा अघिको हुन सक्दैन।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__attachment
+msgid "File"
+msgstr "फाइल"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__attachment_filename
+msgid "Filename"
+msgstr "फाइलनाम"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Financial"
+msgstr "वित्तीय"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__goods_description
+msgid "Goods Description"
+msgstr "सामानको विवरण"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Goods description..."
+msgstr "सामानको विवरण..."
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__hs_code
+msgid "HS / Harmonic Code"
+msgstr "एचएस / हार्मोनिक कोड"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__hs_code_prefix
+msgid "HS Code Prefix"
+msgstr "एचएस कोड उपसर्ग"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_account_move__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_purchase_order__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_company__id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__message_has_error
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_partner_import_settings_tab
+msgid "Import Settings"
+msgstr "आयात सेटिङ"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_purchase_order__import_transaction_type
+msgid "Import Transaction Type"
+msgstr "आयात कारोबार प्रकार"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__company_id
+msgid "Importer (Company)"
+msgstr "आयातकर्ता (कम्पनी)"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/purchase_order.py:0
+msgid ""
+"Imports from India exceeding INR %(limit)s must be opened under an LC (NRB "
+"rule). This order is %(amount)s %(cur)s."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_margin_rule_search
+msgid "In Force Today"
+msgstr "आज लागू"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__incoterm_id
+msgid "Incoterm (2020)"
+msgstr "इन्कोटर्म (२०२०)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_customs_entry_point__border_type__india
+msgid "India Border"
+msgstr "भारत सिमाना"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__insurance
+msgid "Insurance Policy / Certificate"
+msgstr "बीमालेख / प्रमाणपत्र"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__notes
+msgid "Internal Notes"
+msgstr "आन्तरिक टिप्पणी"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__date_lc
+msgid "Issuance Date"
+msgstr "जारी मिति"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Issue LC"
+msgstr "प्रतीतपत्र जारी गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__issued
+msgid "Issued (MT700)"
+msgstr "जारी (MT700)"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__issuing_bank_id
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Issuing Bank"
+msgstr "जारी गर्ने बैंक"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__issuing_bank_branch
+msgid "Issuing Bank Branch"
+msgstr "जारी गर्ने बैंक शाखा"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__lc_id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__lc_id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__lc_id
+msgid "LC"
+msgstr "प्रतीतपत्र"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "LC %(lc)s cannot move to '%(state)s' from its current status."
+msgstr "प्रतीतपत्र %(lc)s हालको स्थितिबाट '%(state)s' मा जान सक्दैन।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "LC %s cannot be deleted once issued. Cancel it instead."
+msgstr "जारी भइसकेको प्रतीतपत्र %s मेट्न मिल्दैन। बरु रद्द गर्नुहोस्।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/purchase_order.py:0
+msgid ""
+"LC '%s' is not live (issued/shipped/documents). Only an issued LC can be "
+"used on Purchase Orders."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_nepal_lc_amendment
+msgid "LC Amendment"
+msgstr "प्रतीतपत्र संशोधन"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_nepal_lc_amendment_wizard
+msgid "LC Amendment Wizard"
+msgstr "प्रतीतपत्र संशोधन विजार्ड"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_nepal_lc_charge
+msgid "LC Bank Charge"
+msgstr "प्रतीतपत्र बैंक शुल्क"
+
+#. module: nepal_import_lc
+#: model:ir.ui.menu,name:nepal_import_lc.menu_nepal_lc_config
+msgid "LC Configuration"
+msgstr "प्रतीतपत्र कन्फिगरेसन"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_nepal_lc_document
+msgid "LC Document"
+msgstr "प्रतीतपत्र कागजात"
+
+#. module: nepal_import_lc
+#: model:ir.actions.act_window,name:nepal_import_lc.action_nepal_lc_master
+#: model:ir.ui.menu,name:nepal_import_lc.menu_nepal_lc_root
+msgid "LC Management"
+msgstr "प्रतीतपत्र व्यवस्थापन"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_partner__is_lc_mandatory
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_users__is_lc_mandatory
+msgid "LC Mandatory"
+msgstr "प्रतीतपत्र अनिवार्य"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_nepal_lc_master
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "LC Master"
+msgstr "प्रतीतपत्र मास्टर"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_list
+msgid "LC Masters"
+msgstr "प्रतीतपत्र मास्टरहरू"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__name
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "LC Number"
+msgstr "प्रतीतपत्र नम्बर"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_account_bank_statement_line__lc_id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_account_move__lc_id
+#: model:ir.model.fields,field_description:nepal_import_lc.field_purchase_order__lc_id
+msgid "LC Reference"
+msgstr "प्रतीतपत्र सन्दर्भ"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__lc_type
+msgid "LC Type"
+msgstr "प्रतीतपत्र प्रकार"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "LC Type (Sight/Usance)"
+msgstr "प्रतीतपत्र प्रकार (दर्शनी/म्यादी)"
+
+#. module: nepal_import_lc
+#: model:ir.actions.act_window,name:nepal_import_lc.action_nepal_lc_utilization
+#: model:ir.ui.menu,name:nepal_import_lc.menu_nepal_lc_utilization
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_pivot
+msgid "LC Utilization"
+msgstr "प्रतीतपत्र उपयोग"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__lc_value
+msgid "LC Value"
+msgstr "प्रतीतपत्र मूल्य"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "LC value must be greater than zero."
+msgstr "प्रतीतपत्र मूल्य शून्य भन्दा बढी हुनुपर्छ।"
+
+#. module: nepal_import_lc
+#: model:ir.actions.server,name:nepal_import_lc.ir_cron_lc_auto_expire_ir_actions_server
+msgid "LC: Auto-expire overdue LCs"
+msgstr "प्रतीतपत्र: म्याद नाघेका प्रतीतपत्र स्वतः समाप्त गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__write_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__write_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__write_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__write_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__write_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__write_uid
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__write_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__write_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__write_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_charge__write_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__write_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__write_date
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__date_latest_shipment
+msgid "Latest Shipment Date"
+msgstr "अन्तिम ढुवानी मिति"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Latest shipment date cannot be after the LC expiry date."
+msgstr "अन्तिम ढुवानी मिति प्रतीतपत्र समाप्ति मिति पछिको हुन सक्दैन।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__lc_id
+msgid "Lc"
+msgstr "प्रतीतपत्र"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_margin_rule__date_to
+msgid "Leave blank if the rule is still in force."
+msgstr "नियम अझै लागू छ भने खाली छोड्नुहोस्।"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+msgid "Leave blank to keep current"
+msgstr "हालको कायम राख्न खाली छोड्नुहोस्"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Letter of Credit"
+msgstr "प्रतीतपत्र"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__payment_mode__lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__purchase_order__import_transaction_type__lc
+msgid "Letter of Credit (LC)"
+msgstr "प्रतीतपत्र (LC)"
+
+#. module: nepal_import_lc
+#: model:ir.ui.menu,name:nepal_import_lc.menu_nepal_lc_master
+msgid "Letters of Credit"
+msgstr "प्रतीतपत्रहरू"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Live"
+msgstr "सक्रिय"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_partner_import_settings_tab
+msgid "Mandatory Import Transaction Type"
+msgstr "अनिवार्य आयात कारोबार प्रकार"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_list
+msgid "Margin %"
+msgstr "मार्जिन %"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__margin_amount
+msgid "Margin Amount"
+msgstr "मार्जिन रकम"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__margin_deposit_date
+msgid "Margin Deposit Date"
+msgstr "मार्जिन जम्मा मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__margin_deposited
+msgid "Margin Deposited"
+msgstr "मार्जिन जम्मा भयो"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Mark Shipped"
+msgstr "ढुवानी भएको चिन्ह लगाउनुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_margin_rule__hs_code_prefix
+msgid ""
+"Matches any LC whose HS code starts with this prefix (e.g. '2203' for beer, "
+"'24' for tobacco, '8703' for motor cars)."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__min_margin_rate
+msgid "Minimum Cash Margin (%)"
+msgstr "न्यूनतम नगद मार्जिन (%)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__required_margin_rate
+msgid ""
+"Minimum cash margin mandated by NRB for this HS code on the issuance/today "
+"date. 0 if no directive applies."
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_margin_rule.py:0
+msgid "Minimum cash margin must be between 0% and 100%."
+msgstr "न्यूनतम नगद मार्जिन ०% र १००% बीच हुनुपर्छ।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_margin_rule__directive_ref
+msgid "NRB Directive / Circular"
+msgstr "ने.रा.बैंक निर्देशन / परिपत्र"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__exchange_rate
+msgid "NRB Exchange Rate"
+msgstr "ने.रा.बैंक विनिमय दर"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_nepal_lc_margin_rule
+msgid "NRB LC Margin Rule"
+msgstr "ने.रा.बैंक प्रतीतपत्र मार्जिन नियम"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_margin_rule_form
+msgid "NRB Margin Rule"
+msgstr "ने.रा.बैंक मार्जिन नियम"
+
+#. module: nepal_import_lc
+#: model:ir.actions.act_window,name:nepal_import_lc.action_nepal_lc_margin_rule
+#: model:ir.ui.menu,name:nepal_import_lc.menu_nepal_lc_margin_rule
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_margin_rule_list
+msgid "NRB Margin Rules"
+msgstr "ने.रा.बैंक मार्जिन नियमहरू"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__required_margin_rate
+msgid "NRB Required Margin (%)"
+msgstr "ने.रा.बैंक आवश्यक मार्जिन (%)"
+
+#. module: nepal_import_lc
+#: model_terms:ir.actions.act_window,help:nepal_import_lc.action_nepal_lc_margin_rule
+msgid ""
+"NRB periodically mandates minimum cash margins (50%-100%) to open\n"
+"            LCs for luxury / non-essential goods. Add a rule per HS-code prefix\n"
+"            with the effective dates; the LC form will warn and block issuance\n"
+"            when the margin is below the mandated minimum."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_customs_entry_point__nrb_approved
+msgid "NRB-Approved"
+msgstr "ने.रा.बैंक-स्वीकृत"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_margin_rule__min_margin_rate
+msgid "NRB-mandated minimum cash margin to open an LC for these goods."
+msgstr ""
+"यी सामानहरूको प्रतीतपत्र खोल्न ने.रा.बैंकले तोकेको न्यूनतम नगद मार्जिन।"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_nepal_customs_entry_point
+msgid "Nepal Customs Entry Point"
+msgstr "नेपाल भन्सार प्रवेश बिन्दु"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__new_expiry
+msgid "New Expiry Date"
+msgstr "नयाँ समाप्ति मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__new_value
+msgid "New LC Value"
+msgstr "नयाँ प्रतीतपत्र मूल्य"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__new_latest_shipment
+msgid "New Latest Shipment Date"
+msgstr "नयाँ अन्तिम ढुवानी मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__new_tenor_days
+msgid "New Tenor (days)"
+msgstr "नयाँ अवधि (दिन)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__notes
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Notes"
+msgstr "टिप्पणी"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_customs_entry_point__nrb_approved
+msgid ""
+"On Nepal Rastra Bank's pre-approved list of customs points that may be named"
+" in an LC."
+msgstr ""
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Only a cancelled LC can be reset to draft."
+msgstr "रद्द गरिएको प्रतीतपत्र मात्र मस्यौदामा फर्काउन सकिन्छ।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Only a draft LC can be submitted as an application."
+msgstr "मस्यौदा अवस्थाको प्रतीतपत्र मात्र आवेदनका रूपमा पेश गर्न सकिन्छ।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Only a draft/applied LC can be issued."
+msgstr "मस्यौदा/आवेदन अवस्थाको प्रतीतपत्र मात्र जारी गर्न सकिन्छ।"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Only a draft/applied/issued LC can be cancelled."
+msgstr "मस्यौदा/आवेदन/जारी अवस्थाको प्रतीतपत्र मात्र रद्द गर्न सकिन्छ।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__opening
+msgid "Opening / Issuance Commission"
+msgstr "खोल्ने / जारी कमिसन"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_customs_entry_point__border_type__other
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__other
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__other
+msgid "Other"
+msgstr "अन्य"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__packing_list
+msgid "Packing List"
+msgstr "प्याकिङ सूची"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__paid
+msgid "Paid / Accepted"
+msgstr "भुक्तानी / स्वीकृत"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Pay / Accept"
+msgstr "भुक्तानी / स्वीकार गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__payment_mode
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Payment Mode"
+msgstr "भुक्तानी विधि"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__pragyapan_patra
+msgid "Pragyapan Patra (Customs Declaration)"
+msgstr "प्रज्ञापनपत्र (भन्सार घोषणा)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__purchase_order__import_transaction_type__pp
+msgid "Pragyapan Patra (PP)"
+msgstr "प्रज्ञापनपत्र (PP)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_partner__is_pp_mandatory
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_users__is_pp_mandatory
+msgid "Pragyapan Patra Mandatory"
+msgstr "प्रज्ञापनपत्र अनिवार्य"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_document__doc_type__pi
+msgid "Proforma Invoice / Indent"
+msgstr "प्रोफर्मा बीजक / इन्डेन्ट"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__proforma_invoice_ref
+msgid "Proforma Invoice / Indent No."
+msgstr "प्रोफर्मा बीजक / इन्डेन्ट नं."
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__pi_date
+msgid "Proforma Invoice Date"
+msgstr "प्रोफर्मा बीजक मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__purchase_order__import_transaction_type__pc
+msgid "Purchase Consignment (PC)"
+msgstr "खरिद कन्साइनमेन्ट (PC)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_partner__is_pc_mandatory
+#: model:ir.model.fields,field_description:nepal_import_lc.field_res_users__is_pc_mandatory
+msgid "Purchase Consignment Mandatory"
+msgstr "खरिद कन्साइनमेन्ट अनिवार्य"
+
+#. module: nepal_import_lc
+#: model:ir.model,name:nepal_import_lc.model_purchase_order
+msgid "Purchase Order"
+msgstr "खरिद आदेश"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__purchase_order_ids
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Purchase Orders"
+msgstr "खरिद आदेशहरू"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+msgid "Reason"
+msgstr "कारण"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment_wizard__notes
+msgid "Reason / Notes"
+msgstr "कारण / टिप्पणी"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_lc_amendment_wizard_form
+msgid "Reason for amendment (e.g. bank negotiation, usance extension)"
+msgstr "संशोधनको कारण (जस्तै बैंक वार्ता, म्याद थप)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__received
+msgid "Received"
+msgstr "प्राप्त"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__received_date
+msgid "Received On"
+msgstr "प्राप्त मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__name
+msgid "Reference / No."
+msgstr "सन्दर्भ / नं."
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__remaining_balance
+msgid "Remaining Balance"
+msgstr "बाँकी रकम"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__required
+msgid "Required"
+msgstr "आवश्यक"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Reset to Draft"
+msgstr "मस्यौदामा रिसेट गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__new_expiry
+msgid "Revised Expiry Date"
+msgstr "संशोधित समाप्ति मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__new_value
+msgid "Revised LC Value"
+msgstr "संशोधित प्रतीतपत्र मूल्य"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Revised LC value cannot be negative."
+msgstr "संशोधित प्रतीतपत्र मूल्य ऋणात्मक हुन सक्दैन।"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__new_latest_shipment
+msgid "Revised Latest Shipment Date"
+msgstr "संशोधित अन्तिम ढुवानी मिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_amendment__new_tenor_days
+msgid "Revised Tenor (days)"
+msgstr "संशोधित अवधि (दिन)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_charge__charge_type__swift
+msgid "SWIFT Charge"
+msgstr "SWIFT शुल्क"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_res_partner__beneficiary_bank_swift
+#: model:ir.model.fields,help:nepal_import_lc.field_res_users__beneficiary_bank_swift
+msgid ""
+"SWIFT/BIC of the supplier's (beneficiary's) bank, used when opening an LC in"
+" their favour."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Search LCs"
+msgstr "प्रतीतपत्र खोज्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_document__sequence
+msgid "Sequence"
+msgstr "क्रम"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__state__shipped
+msgid "Shipped"
+msgstr "ढुवानी भएको"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__lc_type__sight
+msgid "Sight LC"
+msgstr "दर्शनी प्रतीतपत्र"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__state
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "Status"
+msgstr "स्थिति"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Submit Application"
+msgstr "आवेदन पेश गर्नुहोस्"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__total_charges
+msgid "Sum of all bank charges, converted to the company currency."
+msgstr "कम्पनी मुद्रामा परिणत गरिएको सबै बैंक शुल्कको जोड।"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_search
+msgid "TT Advance"
+msgstr "TT अग्रिम"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__payment_mode__tt
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__purchase_order__import_transaction_type__tt
+msgid "Telegraphic Transfer (Advance)"
+msgstr "टेलिग्राफिक ट्रान्सफर (अग्रिम)"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__tenor_days
+msgid "Tenor (days)"
+msgstr "अवधि (दिन)"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/lc_master.py:0
+msgid "Tenor (days) cannot be negative."
+msgstr "अवधि (दिन) ऋणात्मक हुन सक्दैन।"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Total"
+msgstr "जम्मा"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__total_charges
+msgid "Total Charges"
+msgstr "कुल शुल्क"
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Transaction"
+msgstr "कारोबार"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields.selection,name:nepal_import_lc.selection__nepal_lc_master__lc_type__usance
+msgid "Usance / Acceptance LC"
+msgstr "म्यादी / स्वीकृति प्रतीतपत्र"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_amendment_wizard__current_tenor
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__tenor_days
+msgid ""
+"Usance/acceptance deferral. Sight LC = 0. Trading firms are capped at 180 "
+"days by NRB."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Utilization"
+msgstr "उपयोग"
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__used_amount
+msgid "Utilized Amount"
+msgstr "उपयोग भएको रकम"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/purchase_order.py:0
+msgid ""
+"Vendor '%s' requires an import transaction type. Please set it before "
+"confirming."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__move_ids
+#: model_terms:ir.ui.view,arch_db:nepal_import_lc.view_nepal_lc_master_form
+msgid "Vendor Bills"
+msgstr "आपूर्तिकर्ता बील"
+
+#. module: nepal_import_lc
+#. odoo-python
+#: code:addons/nepal_import_lc/models/account_move.py:0
+msgid ""
+"Warning: the utilized amount on LC <b>%(lc)s</b> (%(used).2f %(cur)s) now "
+"exceeds its value (%(value).2f %(cur)s). An amendment may be required."
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,field_description:nepal_import_lc.field_nepal_lc_master__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: nepal_import_lc
+#: model:ir.model.fields,help:nepal_import_lc.field_nepal_lc_master__website_message_ids
+msgid "Website communication history"
+msgstr ""

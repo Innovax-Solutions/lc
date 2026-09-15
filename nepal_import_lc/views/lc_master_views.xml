@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_nepal_lc_master_form" model="ir.ui.view">
+        <field name="name">nepal.lc.master.form</field>
+        <field name="model">nepal.lc.master</field>
+        <field name="arch" type="xml">
+            <form string="LC Master">
+                <header>
+                    <button name="action_apply" string="Submit Application" type="object"
+                            invisible="state != 'draft'" class="btn-primary"/>
+                    <button name="action_issue" string="Issue LC" type="object"
+                            invisible="state not in ('draft', 'applied')" class="btn-primary"/>
+                    <button name="action_ship" string="Mark Shipped" type="object"
+                            invisible="state != 'issued'" class="btn-primary"/>
+                    <button name="action_present_documents" string="Documents Presented" type="object"
+                            invisible="state != 'shipped'" class="btn-primary"/>
+                    <button name="action_pay" string="Pay / Accept" type="object"
+                            invisible="state != 'documents'" class="btn-primary"/>
+                    <button name="action_clear_customs" string="Customs Cleared" type="object"
+                            invisible="state != 'paid'" class="btn-primary"/>
+                    <button name="action_close" string="Close LC" type="object"
+                            invisible="state != 'cleared'" class="btn-primary"/>
+                    <button name="action_open_amendment_wizard" string="Amendment" type="object"
+                            invisible="state not in ('issued', 'shipped', 'documents')" class="btn-secondary"/>
+                    <button name="action_cancel" string="Cancel" type="object"
+                            invisible="state not in ('draft', 'applied', 'issued')" class="btn-secondary"/>
+                    <button name="action_reset_to_draft" string="Reset to Draft" type="object"
+                            invisible="state != 'cancelled'" class="btn-secondary"/>
+                    <button name="action_create_landed_cost" string="Create Landed Cost"
+                            type="object" class="btn-secondary"
+                            invisible="not purchase_order_ids"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,applied,issued,shipped,documents,paid,cleared,closed"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="Auto / LC Number"
+                                   readonly="state not in ('draft',)"/></h1>
+                    </div>
+                    <group>
+                        <group string="Transaction">
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="payment_mode"
+                                   readonly="state not in ('draft', 'applied')"/>
+                            <field name="lc_type"
+                                   invisible="payment_mode != 'lc'"
+                                   required="payment_mode == 'lc'"
+                                   readonly="state not in ('draft', 'applied')"/>
+                            <field name="partner_id"
+                                   readonly="state not in ('draft', 'applied')"/>
+                            <field name="beneficiary_country_id"/>
+                            <field name="beneficiary_bank_swift"/>
+                        </group>
+                        <group string="Banks">
+                            <field name="issuing_bank_id"
+                                   readonly="state in ('closed', 'expired', 'cancelled')"/>
+                            <field name="issuing_bank_branch"/>
+                            <field name="advising_bank_name"/>
+                            <field name="bibini_form_type"/>
+                            <field name="exim_code"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Financial">
+                            <field name="currency_id"
+                                   readonly="state not in ('draft', 'applied')"/>
+                            <field name="lc_value"
+                                   readonly="state in ('closed', 'expired', 'cancelled')"/>
+                            <label for="margin_rate"/>
+                            <div class="o_row">
+                                <field name="margin_rate" class="oe_inline"/> %
+                                <span class="oe_inline">= </span>
+                                <field name="margin_amount" class="oe_inline" readonly="1"/>
+                            </div>
+                            <field name="margin_deposited"/>
+                            <field name="margin_deposit_date"
+                                   invisible="not margin_deposited"/>
+                            <field name="exchange_rate"/>
+                        </group>
+                        <group string="Utilization">
+                            <field name="used_amount"/>
+                            <field name="remaining_balance"
+                                   decoration-danger="remaining_balance &lt; 0"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Commercial">
+                            <field name="proforma_invoice_ref"/>
+                            <field name="pi_date"/>
+                            <field name="incoterm_id"/>
+                            <field name="origin_country_id"/>
+                        </group>
+                        <group string="Dates &amp; Tenor">
+                            <field name="date_application"/>
+                            <field name="date_lc"/>
+                            <field name="date_expiry"
+                                   readonly="state in ('closed', 'expired', 'cancelled')"/>
+                            <field name="date_latest_shipment"/>
+                            <field name="tenor_days" invisible="lc_type != 'usance'"/>
+                            <field name="date_payment_due" invisible="lc_type != 'usance'"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Customs &amp; Compliance">
+                            <field name="customs_entry_point_id"/>
+                            <field name="bci_required"/>
+                            <field name="bci_ref" invisible="not bci_required"/>
+                            <field name="documents_released"/>
+                        </group>
+                    </group>
+                    <field name="goods_description" placeholder="Goods description..."
+                           nolabel="0"/>
+                    <notebook>
+                        <page string="Documents" name="documents">
+                            <field name="document_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="doc_type"/>
+                                    <field name="name"/>
+                                    <field name="required"/>
+                                    <field name="received"/>
+                                    <field name="received_date"/>
+                                    <field name="attachment" filename="attachment_filename" widget="binary"/>
+                                    <field name="attachment_filename" column_invisible="1"/>
+                                    <field name="notes"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Amendments" name="amendments"
+                              invisible="state in ('draft', 'applied')">
+                            <field name="amendment_ids" readonly="1">
+                                <list>
+                                    <field name="amendment_no"/>
+                                    <field name="date"/>
+                                    <field name="new_value"/>
+                                    <field name="new_expiry"/>
+                                    <field name="new_latest_shipment"/>
+                                    <field name="new_tenor_days"/>
+                                    <field name="notes"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Purchase Orders" name="purchase_orders">
+                            <field name="purchase_order_ids" readonly="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="partner_id"/>
+                                    <field name="date_order"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Vendor Bills" name="vendor_bills">
+                            <field name="move_ids" readonly="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="invoice_date"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Landed Costs" name="lc_landed_costs">
+                            <field name="landed_cost_ids" readonly="1">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="date"/>
+                                    <field name="amount_total"/>
+                                    <field name="state"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Notes" name="notes_page">
+                            <field name="notes" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- List View -->
+    <record id="view_nepal_lc_master_list" model="ir.ui.view">
+        <field name="name">nepal.lc.master.list</field>
+        <field name="model">nepal.lc.master</field>
+        <field name="arch" type="xml">
+            <list string="LC Masters"
+                  decoration-danger="remaining_balance &lt; 0"
+                  decoration-warning="state == 'expired'">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="payment_mode"/>
+                <field name="lc_type" optional="show"/>
+                <field name="issuing_bank_id" optional="show"/>
+                <field name="currency_id" optional="hide"/>
+                <field name="lc_value"/>
+                <field name="margin_rate" optional="hide" string="Margin %"/>
+                <field name="used_amount" optional="hide"/>
+                <field name="remaining_balance"/>
+                <field name="date_expiry"/>
+                <field name="state" widget="badge"
+                       decoration-info="state in ('applied',)"
+                       decoration-success="state in ('issued', 'shipped', 'documents', 'paid', 'cleared')"
+                       decoration-muted="state in ('draft', 'closed')"
+                       decoration-danger="state in ('expired', 'cancelled')"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_nepal_lc_master_search" model="ir.ui.view">
+        <field name="name">nepal.lc.master.search</field>
+        <field name="model">nepal.lc.master</field>
+        <field name="arch" type="xml">
+            <search string="Search LCs">
+                <field name="name" string="LC Number"/>
+                <field name="partner_id"/>
+                <field name="issuing_bank_id"/>
+                <filter string="Live" name="lc_live"
+                        domain="[('state','in',('issued','shipped','documents','paid','cleared'))]"/>
+                <filter string="Draft / Applied" name="lc_pending"
+                        domain="[('state','in',('draft','applied'))]"/>
+                <filter string="Expired" name="expired" domain="[('state','=','expired')]"/>
+                <separator/>
+                <filter string="Letter of Credit" name="mode_lc" domain="[('payment_mode','=','lc')]"/>
+                <filter string="TT Advance" name="mode_tt" domain="[('payment_mode','=','tt')]"/>
+                <filter string="DAP / DAA" name="mode_dap" domain="[('payment_mode','=','dap_daa')]"/>
+                <separator/>
+                <filter string="Beneficiary" name="grp_partner" context="{'group_by': 'partner_id'}"/>
+                <filter string="Issuing Bank" name="grp_bank" context="{'group_by': 'issuing_bank_id'}"/>
+                <filter string="Status" name="grp_state" context="{'group_by': 'state'}"/>
+                <filter string="Payment Mode" name="grp_mode" context="{'group_by': 'payment_mode'}"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Window Action: LC Management -->
+    <record id="action_nepal_lc_master" model="ir.actions.act_window">
+        <field name="name">LC Management</field>
+        <field name="res_model">nepal.lc.master</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_nepal_lc_master_search"/>
+        <field name="context">{'search_default_lc_live': 1}</field>
+    </record>
+
+    <!-- Pivot View for LC Utilization -->
+    <record id="view_nepal_lc_master_pivot" model="ir.ui.view">
+        <field name="name">nepal.lc.master.pivot</field>
+        <field name="model">nepal.lc.master</field>
+        <field name="arch" type="xml">
+            <pivot string="LC Utilization">
+                <field name="partner_id" type="row"/>
+                <field name="lc_value" type="measure"/>
+                <field name="used_amount" type="measure"/>
+                <field name="remaining_balance" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Window Action: LC Utilization (list + pivot) -->
+    <record id="action_nepal_lc_utilization" model="ir.actions.act_window">
+        <field name="name">LC Utilization</field>
+        <field name="res_model">nepal.lc.master</field>
+        <field name="view_mode">list,pivot</field>
+        <field name="search_view_id" ref="view_nepal_lc_master_search"/>
+    </record>
+</odoo>

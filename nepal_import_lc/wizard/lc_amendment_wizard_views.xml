@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_lc_amendment_wizard_form" model="ir.ui.view">
+        <field name="name">nepal.lc.amendment.wizard.form</field>
+        <field name="model">nepal.lc.amendment.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Amendment">
+                <field name="lc_id" invisible="1"/>
+                <field name="currency_id" invisible="1"/>
+                <group>
+                    <group string="Current Values">
+                        <field name="current_value" readonly="1"/>
+                        <field name="current_expiry" readonly="1"/>
+                        <field name="current_latest_shipment" readonly="1"/>
+                        <field name="current_tenor" readonly="1"/>
+                    </group>
+                    <group string="Amendment">
+                        <field name="new_value" placeholder="Leave blank to keep current"/>
+                        <field name="new_expiry" placeholder="Leave blank to keep current"/>
+                        <field name="new_latest_shipment" placeholder="Leave blank to keep current"/>
+                        <field name="new_tenor_days" placeholder="Leave blank to keep current"/>
+                    </group>
+                </group>
+                <group string="Reason">
+                    <field name="notes" nolabel="1" placeholder="Reason for amendment (e.g. bank negotiation, usance extension)"/>
+                </group>
+                <footer>
+                    <button name="action_apply" string="Apply Amendment" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_lc_amendment_wizard" model="ir.actions.act_window">
+        <field name="name">Create Amendment</field>
+        <field name="res_model">nepal.lc.amendment.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

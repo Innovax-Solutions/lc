@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- LC number sequence -->
+    <record id="seq_nepal_lc_master" model="ir.sequence">
+        <field name="name">Nepal Import LC</field>
+        <field name="code">nepal.lc.master</field>
+        <field name="prefix">LC/%(year)s/</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <!-- NRB import-payment thresholds (editable; track each Unified Directive). -->
+    <record id="param_tt_usd" model="ir.config_parameter">
+        <field name="key">nepal_import_lc.tt_advance_limit_usd</field>
+        <field name="value">35000</field>
+    </record>
+    <record id="param_tt_inr" model="ir.config_parameter">
+        <field name="key">nepal_import_lc.tt_advance_limit_inr</field>
+        <field name="value">30000000</field>
+    </record>
+    <record id="param_dap_usd" model="ir.config_parameter">
+        <field name="key">nepal_import_lc.dap_limit_usd</field>
+        <field name="value">50000</field>
+    </record>
+    <record id="param_india_lc_inr" model="ir.config_parameter">
+        <field name="key">nepal_import_lc.india_lc_mandatory_inr</field>
+        <field name="value">30000000</field>
+    </record>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top-level LC Management menu under Purchase -->
+    <menuitem id="menu_nepal_lc_root"
+              name="LC Management"
+              parent="purchase.menu_purchase_root"
+              sequence="20"/>
+
+    <menuitem id="menu_nepal_lc_master"
+              name="Letters of Credit"
+              parent="menu_nepal_lc_root"
+              action="action_nepal_lc_master"
+              sequence="10"/>
+
+    <menuitem id="menu_nepal_lc_utilization"
+              name="LC Utilization"
+              parent="menu_nepal_lc_root"
+              action="action_nepal_lc_utilization"
+              sequence="20"/>
+
+    <!-- Configuration submenu -->
+    <menuitem id="menu_nepal_lc_config"
+              name="LC Configuration"
+              parent="menu_nepal_lc_root"
+              sequence="90"/>
+
+    <menuitem id="menu_nepal_customs_entry_point"
+              name="Customs Entry Points"
+              parent="menu_nepal_lc_config"
+              action="action_nepal_customs_entry_point"
+              sequence="10"/>
+</odoo>

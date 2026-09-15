@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nepal_customs_entry_point_user,nepal.customs.entry.point.user,model_nepal_customs_entry_point,base.group_user,1,0,0,0
+access_nepal_customs_entry_point_manager,nepal.customs.entry.point.manager,model_nepal_customs_entry_point,purchase.group_purchase_manager,1,1,1,1
+access_nepal_lc_master_user,nepal.lc.master.user,model_nepal_lc_master,purchase.group_purchase_user,1,0,0,0
+access_nepal_lc_master_manager,nepal.lc.master.manager,model_nepal_lc_master,purchase.group_purchase_manager,1,1,1,0
+access_nepal_lc_amendment_manager,nepal.lc.amendment.manager,model_nepal_lc_amendment,purchase.group_purchase_manager,1,1,1,0
+access_nepal_lc_amendment_user,nepal.lc.amendment.user,model_nepal_lc_amendment,purchase.group_purchase_user,1,0,0,0
+access_nepal_lc_amendment_wizard_manager,nepal.lc.amendment.wizard.manager,model_nepal_lc_amendment_wizard,purchase.group_purchase_manager,1,1,1,1
+access_nepal_lc_amendment_wizard_user,nepal.lc.amendment.wizard.user,model_nepal_lc_amendment_wizard,purchase.group_purchase_user,1,1,1,1
+access_nepal_lc_document_user,nepal.lc.document.user,model_nepal_lc_document,purchase.group_purchase_user,1,1,1,0
+access_nepal_lc_document_manager,nepal.lc.document.manager,model_nepal_lc_document,purchase.group_purchase_manager,1,1,1,1
+access_stock_landed_cost_purchase_manager,stock.landed.cost.purchase.manager,stock_landed_costs.model_stock_landed_cost,purchase.group_purchase_manager,1,1,1,0
+access_stock_landed_cost_lines_purchase_manager,stock.landed.cost.lines.purchase.manager,stock_landed_costs.model_stock_landed_cost_lines,purchase.group_purchase_manager,1,1,1,0

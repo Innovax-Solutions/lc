@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Multi-company isolation: a user only sees LCs of companies they are
+         allowed into. -->
+    <record id="nepal_lc_master_company_rule" model="ir.rule">
+        <field name="name">LC Master: multi-company</field>
+        <field name="model_id" ref="model_nepal_lc_master"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>
